@@ -80,7 +80,7 @@ export default function UploadPage() {
     formData.append("date", format(date, "yyyy-MM-dd"))
 
     try {
-      const response = await fetch("https://sequence-additionally-mouse-unsubscribe.trycloudflare.com/upload", {
+      const response = await fetch("https://sequence-additionally-mouse-unsubscribe.trycloudflare.com/api/upload", {
         method: "POST",
         body: formData,
       })

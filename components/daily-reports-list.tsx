@@ -24,7 +24,7 @@ export function DailyReportsList({ dateRange }: { dateRange: DateRange | undefin
     const fetchReports = async () => {
       setIsLoading(true)
       try {
-        let url = "https://sequence-additionally-mouse-unsubscribe.trycloudflare.com/reports/daily"
+        let url = "https://sequence-additionally-mouse-unsubscribe.trycloudflare.com/api/reports/daily"
 
         if (dateRange?.from || dateRange?.to) {
           const params = new URLSearchParams()

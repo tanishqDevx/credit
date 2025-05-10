@@ -27,7 +27,7 @@ export function DailyTransactions({ date }: { date: string }) {
   useEffect(() => {
     const fetchTransactions = async () => {
       try {
-        const response = await fetch(`https://sequence-additionally-mouse-unsubscribe.trycloudflare.com/transactions/date/${date}`)
+        const response = await fetch(`https://sequence-additionally-mouse-unsubscribe.trycloudflare.com/api/transactions/date/${date}`)
         if (!response.ok) {
           throw new Error("Failed to fetch daily transactions")
         }

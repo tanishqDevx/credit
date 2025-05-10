@@ -32,7 +32,7 @@ export default function ReportsPage() {
     const fetchSummaryStats = async () => {
       setIsLoading(true)
       try {
-        let url = "https://sequence-additionally-mouse-unsubscribe.trycloudflare.com/reports/summary"
+        let url = "https://sequence-additionally-mouse-unsubscribe.trycloudflare.com/api/reports/summary"
 
         if (dateRange?.from || dateRange?.to) {
           const params = new URLSearchParams()

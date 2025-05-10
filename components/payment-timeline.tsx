@@ -23,7 +23,7 @@ export function PaymentTimeline({ customerName }: { customerName: string }) {
   useEffect(() => {
     const fetchTimelineData = async () => {
       try {
-        const response = await fetch(`https://sequence-additionally-mouse-unsubscribe.trycloudflare.com/credits/${encodeURIComponent(customerName)}/timeline`)
+        const response = await fetch(`https://sequence-additionally-mouse-unsubscribe.trycloudflare.com/api/credits/${encodeURIComponent(customerName)}/timeline`)
         if (!response.ok) {
           throw new Error("Failed to fetch timeline data")
         }

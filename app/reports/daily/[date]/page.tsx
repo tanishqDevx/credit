@@ -33,7 +33,7 @@ export default function DailyReportPage({ params }: { params: Promise<{ date: st
   useEffect(() => {
     const fetchDailySummary = async () => {
       try {
-        const response = await fetch(`https://sequence-additionally-mouse-unsubscribe.trycloudflare.com/reports/daily/${date}`)
+        const response = await fetch(`https://sequence-additionally-mouse-unsubscribe.trycloudflare.com/api/reports/daily/${date}`)
         if (!response.ok) {
           throw new Error("Failed to fetch daily summary")
         }

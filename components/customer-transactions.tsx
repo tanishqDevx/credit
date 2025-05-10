@@ -25,7 +25,7 @@ export function CustomerTransactions({ customerName }: { customerName: string })
     const fetchTransactions = async () => {
       try {
         const response = await fetch(
-          `https://sequence-additionally-mouse-unsubscribe.trycloudflare.com/transactions/customer/${encodeURIComponent(customerName)}`,
+          `https://sequence-additionally-mouse-unsubscribe.trycloudflare.com/api/transactions/customer/${encodeURIComponent(customerName)}`,
         )
         if (!response.ok) {
           throw new Error("Failed to fetch customer transactions")

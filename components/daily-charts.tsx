@@ -25,7 +25,7 @@ export function DailyCharts({ date }: { date: string }) {
   useEffect(() => {
     const fetchChartData = async () => {
       try {
-        const response = await fetch(`https://sequence-additionally-mouse-unsubscribe.trycloudflare.com/reports/daily/${date}/charts`)
+        const response = await fetch(`https://sequence-additionally-mouse-unsubscribe.trycloudflare.com/api/reports/daily/${date}/charts`)
         if (!response.ok) {
           throw new Error("Failed to fetch chart data")
         }

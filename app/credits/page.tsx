@@ -25,7 +25,7 @@ export default function CreditsPage() {
   useEffect(() => {
     const fetchCredits = async () => {
       try {
-        const response = await fetch("https://sequence-additionally-mouse-unsubscribe.trycloudflare.com/credits")
+        const response = await fetch("https://sequence-additionally-mouse-unsubscribe.trycloudflare.com/api/credits")
         if (!response.ok) {
           throw new Error("Failed to fetch credits")
         }

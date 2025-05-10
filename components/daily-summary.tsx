@@ -25,7 +25,7 @@ export function DailySummary() {
   useEffect(() => {
     const fetchLatestSummary = async () => {
       try {
-        const response = await fetch("https://sequence-additionally-mouse-unsubscribe.trycloudflare.com/reports/latest")
+        const response = await fetch("https://sequence-additionally-mouse-unsubscribe.trycloudflare.com/api/reports/latest")
         if (!response.ok) {
           throw new Error("Failed to fetch latest summary")
         }

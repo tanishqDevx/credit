@@ -24,7 +24,7 @@ export function SummaryCharts({ dateRange }: { dateRange: DateRange | undefined 
     const fetchChartData = async () => {
       setIsLoading(true)
       try {
-        let url = "https://sequence-additionally-mouse-unsubscribe.trycloudflare.com/reports/charts"
+        let url = "https://sequence-additionally-mouse-unsubscribe.trycloudflare.com/api/reports/charts"
 
         if (dateRange?.from || dateRange?.to) {
           const params = new URLSearchParams()

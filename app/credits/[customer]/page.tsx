@@ -30,7 +30,7 @@ export default function CustomerCreditPage({ params }: { params: { customer: str
   useEffect(() => {
     const fetchCreditDetails = async () => {
       try {
-        const response = await fetch(`https://sequence-additionally-mouse-unsubscribe.trycloudflare.com/credits/${encodeURIComponent(customerName)}`)
+        const response = await fetch(`https://sequence-additionally-mouse-unsubscribe.trycloudflare.com/api/credits/${encodeURIComponent(customerName)}`)
         if (!response.ok) {
           throw new Error("Failed to fetch credit details")
         }
